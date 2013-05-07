@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0">
+
+  <author href="" 
+          rim:copyright="Copyright"></author>
+
+  <name>Update checker + Notifications</name>
+
+  <description>
+ Sample for Notifications and checking for updates
+  </description>
+
+
+  <rim:loadingScreen backgroundImage="splashscreen.png"
+                     onFirstLaunch="true">-->
+  <rim:transitionEffect type="zoomIn"/>
+  </rim:loadingScreen>
+		
+  <rim:category name="utils"/>	
+
+  <rim:permissions>
+    <rim:permit>access_shared</rim:permit> 
+  </rim:permissions>
+
+ <icon src="icon.png"/>
+
+  <content src="check.htm"/>
+
+
+  <access uri="*" subdomains="true">
+
+  </access>
+    <feature id="blackberry.app.event"/>
+    <feature id="blackberry.invoke"/>
+    <feature id="blackberry.ui.menu" />
+    <feature id="blackberry.ui.dialog"/>
+    <feature id="blackberry.identity" />
+    <feature id="blackberry.system.event" />
+    <feature id="blackberry.app" />
+    <feature id="blackberry.system" />
+    <feature id="blackberry.utils" />
+    <feature id="blackberry.io.file" />
+    <feature id="blackberry.io.dir" />
+
+</widget>
